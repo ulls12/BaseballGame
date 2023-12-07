@@ -2,8 +2,8 @@
 //  main.swift
 //  BaseballGame
 //
-//  Created by t2023-m0044 on 12/7/23.
-//
+//  Created by eunsung on 12/7/23.
+//  BaseballGame
 
 import Foundation
 
