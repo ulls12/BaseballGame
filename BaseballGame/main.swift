@@ -11,6 +11,7 @@ var inputNumbers = [Int]()
 var answerNumbers = [Int]()
 
 class BaseballGame {
+    
     func generateRandomNumber() -> [Int] {
         var threeDigitNumber = [Int]()
         while threeDigitNumber.count < 3 {
@@ -40,5 +41,20 @@ class BaseballGame {
         print("\(strikeCount) 스트라이크, \(ballCount) 볼")
         return strikeCount
     }
+    
+    func pressNumber() -> [Int] {
+        var N = [Int]()
+        for _ in 0...2 {
+            N.append(Int(readLine()!)!)
+        }
+        return N
+    }
+    // readLine 에 대한 이해도 부족, 오류 잡아내는 과정 생략
+    func gameStart() {
+        answerNumbers = generateRandomNumber()
+        inputNumbers = pressNumber()
+        if inputNumbers == answerNumbers {
+            print("정답입니다!")
+        }
+    }
 }
-
